@@ -1,0 +1,15 @@
+{
+	"name" : "Test iframe css",
+	"version" : "1.0",
+	"description" : "Dev not injecting css for iframe children",
+
+	"content_scripts": [{
+		"matches": ["http://*/*", "https://*/*","https://*/" ],
+		"css": ["style.css"],		
+		"js": ["script.js"],
+		"run_at": "document_end",
+		"all_frames": true
+	}],
+
+	"manifest_version": 2
+}
